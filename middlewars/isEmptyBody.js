@@ -6,6 +6,7 @@ const isEmptyBody = (req, res, next) => {
         next(HttpError(400, "missing fields"))
     }
     next()
+   
 }
 
 const isEmptyBodyFavorite = (req, res, next) => {
